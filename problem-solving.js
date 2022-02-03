@@ -32,3 +32,20 @@ function paperRequirements(page1, page2, page3){
 }
 let totalPages = paperRequirements(3, 2, 6);
 console.log(totalPages); 
+
+
+// find long charecter friend name in array 
+
+let myFriends = ['rana', 'biplop', 'jhankar', 'mahbub']
+
+function bestFriend(array){
+    let longName = '';
+  for(let element of myFriends){
+      if(element.length > longName.length){
+          longName = element;
+      }
+  }
+  return longName;
+}
+let bestName = bestFriend(myFriends);
+console.log(bestName);
