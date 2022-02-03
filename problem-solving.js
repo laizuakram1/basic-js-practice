@@ -16,3 +16,19 @@ function centimeterToMeter(centrimeter){
 }
 let totalMeter = centimeterToMeter(110);
 console.log(totalMeter);
+
+
+
+// paper Requirement for book
+
+
+function paperRequirements(page1, page2, page3){
+    let book1 = page1 * 100;
+    let book2 = page2 * 200;
+    let book3 = page3 * 300;
+    let Pages = book1 + book2 + book3;
+
+    return Pages;
+}
+let totalPages = paperRequirements(3, 2, 6);
+console.log(totalPages); 
